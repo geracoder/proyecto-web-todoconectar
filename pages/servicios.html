@@ -1,97 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assest/img/favlogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
-    <title>Todoconectar</title>
-  </head>
-  <body>
-    <header>
-      <div class="container__navbar"><!-- BARRA DE NAVEGACION-->
-        <div class="navbar">
-        <div class="navbar__logo">
-            <img src="../assest/img/logosf.png" alt="logotipo" class="logo">
-        </div>
-        <ul class="navbar__list">
-            <li class="navbar__itemlist"><a href="../index.html" class="navbar__links">Inicio</a></li>
-            <li class="navbar__itemlist"><a href="./servicios.html" class="navbar__links">Servicios</a></li>
-            <li class="navbar__itemlist"><a href="./contacto.html" class="navbar__links">Contacto</a></li>
-            <li class="navbar__itemlist"><a href="./nosotros.html" class="navbar__links">Nosotros</a></li>
-        </ul>
-        </div>
-      </div>
-    </header>
-    <main>
-        <section class="container__hero hero__services"><!-- HERO SERVICIOS-->
-          <div class="services__title">
-            <h1 class="title__h1">Servicios</h1>
-          </div>
-        </section>
-      
-      <section class="container">
-        <article class="container__services"><!-- HOGAR TEXTO E IMG-->
-          <div class="services__text">
-            <h2>Hogar</h2>
-            <p><b>Puedes vigilar tu hogar en cualquier momento y lugar</b>. Con tu teléfono móvil puedes ver todo lo que ocurre en tiempo real, aunque no te encuentres en casa.<br><br>
-            <b>Las cámaras son de gran utilidad para cuidar de ancianos y/o menores a distancia. ¡Incluso puedes cuidar a tu mascota!</b><br><br>
-            <b>Ofrece mayor seguridad</b>: Tener una cámara de seguridad en un lugar visible hace que una persona que tiene alguna intención de cometer un acto delictivo se sienta restringida y en muchas ocasiones desistirá de intentar ingresar a la vivienda. Por lo tanto, <b>la cámara es un elemento disuasivo del delito</b>.</p>
-          </div>  
-          <div class="services__img">
-            <img src="../assest/img/ServHogar.png" alt="imagen hogar">
-          </div>
-        </article>
-      
-        <article class="container__services"><!-- COMERCIO TEXTO E IMG         CORREGIR EL ORDEN EN RESPONSIVE-->
-          <div class="services__img">
-            <img src="../assest/img/ServNegocio.png" alt="imagen comercio">
-          </div>
-          <div class="services__text">
-            <h2>Comercio</h2>
-            <p><b>Cuando se trata de demostrar un robo, es importante tener evidencias de los hechos</b>. Es de vital importancia el aportar documentos gráficos del momento del hurto, del intento de agresión o de cualquier incidencia ocurrida en tu comercio.</p>
-          </div>
-        </article>
-      
-      <article class="container__services"><!--EMPRESA TEXTO E IMG-->
-        <div class="services__text">
-          <h2>Empresa</h2>
-          <p><b>Vigilancia desde cualquier lugar</b>. Resulta imposible que un Empresario se encuentre en su negocio en todo momento. Por ello, <b>las cámaras de seguridad son una herramienta fundamental para controlar cualquier</b> movimiento dentro de tu empresa desde cualquier lugar.</div>
-          <div class="services__img">
-            <img src="../assest/img/ServEmpresa.png" alt="imagen empresa">
-          </div>
-        </div>
-        </article>
-      </section>
-    </main>
+<html lang="es">
 
-    <footer>
-      <div class="container__footer"><!-- PIE DE PAGINA-->
-        <div class="footer__redes">
-          <div class="redes__logo">
-            <a href="../index.html"><img src="../assest/img/logosf.png" alt="Logotipo" class="logo"></a>
-          </div>
-          <ul class="redes__list">
-            <li class="redes__itemlist"><a href="https://www.facebook.com/" target="_blank" class="redes__link "><img class="redes__link--img" src="../assest/img/LogoFace.png" alt="logo de Facebook"></a></li>
-            <li class="redes__itemlist"><a href="https://www.instagram.com/" target="_blank" class="redes__link "><img class="redes__link--img" src="../assest/img/logoIg.png" alt="logo de Instagram"></a></li>
-            <li class="redes__itemlist"><a href="https://www.gmail.com.ar/" target="_blank" class="redes__link "><img class="redes__link--img" src="../assest/img/LogoEmail.png" alt="logo de Email"></a></li>
-          </ul>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assest/img/favlogo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+        <title>Todoconectar</title>
+    </head>
 
-        <div class="footer__abouts">
-          <ul class="abouts__list">
-            <li class="abouts__itemlist"><a href="./nosotros.html" class="abouts__link"><h2 class="abouts__link--title">Nosotros</h2></a></li>
-            <li class="abouts__itemlist"><a href="./nosotros.html" class="abouts__link">Quienes somos</a></li>
-            <li class="abouts__itemlist"><a href="./contacto.html" class="abouts__link">Contacto</a></li>
-            <li class="abouts__itemlist"><a href="./contacto.html" class="abouts__link">Trabaja con nosotros</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <p><small> Copyright © 2022 TodoConectar Powered by Geracoder</small></p>
-      </div>
-    </footer>
-  </body>
+    <body>
+        <!--  BARRA DE NAVEGACION CON BOOTSTRAP-->
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html"><img src="../assest/img/logosf.png" class="logo"></a> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="./servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="./contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="./nosotros.html">Nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- HERO SERVICIOS-->
+            <section class="container__hero hero__services">
+                <div class="services__title">
+                    <h1 class="title__h1">Servicios</h1>
+                </div>
+            </section>
+            <!-- CONTENEDOR DE TEXTOS E IMAGENES-->
+            <section class="container__general">
+                <!-- HOGAR TEXTO E IMG-->
+                <article class="container__services container__services--hogar">
+                    <div class="services__text">
+                        <h2>Hogar</h2>
+                        <p><b>Puedes vigilar tu hogar en cualquier momento y lugar</b>. Con tu teléfono móvil puedes ver
+                            todo lo que ocurre en tiempo real, aunque no te encuentres en casa.<br><br>
+                            <b>Las cámaras son de gran utilidad para cuidar de ancianos y/o menores a distancia. ¡Incluso
+                                puedes cuidar a tu mascota!</b><br><br>
+                            <b>Ofrece mayor seguridad</b>: Tener una cámara de seguridad en un lugar visible hace que una
+                            persona que tiene alguna intención de cometer un acto delictivo se sienta restringida y en
+                            muchas ocasiones desistirá de intentar ingresar a la vivienda. Por lo tanto, <b>la cámara es un
+                                elemento disuasivo del delito</b>.
+                        </p>
+                    </div>
+                    <div class="services__img">
+                        <img src="../assest/img/ServHogar.png" alt="imagen hogar">
+                    </div>
+                </article>
+                <!-- COMERCIO TEXTO E IMG -->
+                <article class="container__services container__services--comercio">
+                    <div class="services__img ">
+                        <img src="../assest/img/ServNegocio.png" alt="imagen comercio">
+                    </div>
+                    <div class="services__text ">
+                        <h2>Comercio</h2>
+                        <p><b>Cuando se trata de demostrar un robo, es importante tener evidencias de los hechos</b>. Es de
+                            vital importancia el aportar documentos gráficos del momento del hurto, del intento de agresión
+                            o de cualquier incidencia ocurrida en tu comercio.</p>
+                    </div>
+                </article>
+                <!--EMPRESA TEXTO E IMG-->
+                <article class="container__services container__services--empresa">
+                    <div class="services__text">
+                        <h2>Empresa</h2>
+                        <p><b>Vigilancia desde cualquier lugar</b>. Resulta imposible que un Empresario se encuentre en su
+                            negocio en todo momento. Por ello, <b>las cámaras de seguridad son una herramienta fundamental
+                                para controlar cualquier</b> movimiento dentro de tu empresa desde cualquier lugar.
+                    </div>
+                    <div class="services__img">
+                        <img src="../assest/img/ServEmpresa.png" alt="imagen empresa">
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!-- PIE DE PAGINA CON BOOTSTRAP-->
+        <footer>
+            <div class="container-fluid text-center footer__bg--color text-light">
+                <a href="../index.html"><img src="../assest/img/logosf.png" class="logo"></a>
+                <div class="row text-center d-flex justify-content-center pt-3">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold footer__hover">
+                            <a href="./nosotros.html" class="text-light text-decoration-none ">Nosotros</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold footer__hover">
+                            <a href="./productos.html" class="text-light text-decoration-none ">Tecnologias</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold footer__hover">
+                            <a href="./contacto.html" class="text-light text-decoration-none ">Ayuda y consejos</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold footer__hover">
+                            <a href="./contacto.html" class="text-light text-decoration-none ">Contacto</a>
+                        </h6>
+                    </div>
+                </div>
+                <!-- REDES SOCIALES -->
+                <div class="container p-4 pb-0">
+                    <div class="mb-4">
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+                        <!-- Google -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.gmail.com/" target="_blank" role="button"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center p-3 footer__copy--bg">
+                    © 2022 Copyright:
+                    <a class="text-white" href="#">Geracoder</a>
+                </div>
+            </div>
+        </footer>
+        <!--scripts-->
+        <script src="https://kit.fontawesome.com/b0dd6fdce5.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+
 </html>
