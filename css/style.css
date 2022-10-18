@@ -11,8 +11,6 @@
 }
 
 
-
-
 /************************************GENERALES*********************************/
 body{
     background-color: rgb(245, 245, 245);
@@ -103,10 +101,17 @@ h1{
 
     padding-left: 10px;
 }
-    
+
 }
 
+@media (max-width: 351px) {
 
+    .navbar-brand{
+    width: 200px;
+
+    } 
+    }
+    
 
 /***************************INDEX************************************/
 
@@ -158,7 +163,7 @@ h1{
 
 /**SECCION TITULO***************INDEX***/
 
-.conainer__title{
+.container__title{
     margin: 30px auto 30px auto;
     align-items: center;
     text-align: center;
@@ -178,8 +183,8 @@ h1{
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: minmax(180px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     gap: 20px;
     padding: 20px;
     }
@@ -189,6 +194,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 180px;
 
     box-shadow: 1px 2px 5px black;
     border-radius: 4px;
@@ -234,20 +240,28 @@ h1{
 
 
 @media (max-width: 768px) {
+    .container__cards{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    }
     .cards__item:nth-child(3){
         grid-column: 1 / 3
     }
     
+
 }
 
 @media (max-width: 576px) {
 
     .container__cards{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-auto-rows: minmax(180px, auto);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     .cards__item:nth-child(3){
         grid-column: 1 / 2
+}
+.cards__item{
+    height: 150px;
 }
 }
 
@@ -289,8 +303,8 @@ h1{
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -318,8 +332,19 @@ h1{
     color: var(--btn-bg-color);
 }
 
+@media (max-width: 768px) {
+    .container__banner{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+    .banner__img--size{
+        width: 400px;
+        border-radius: 0 25px 0 25px;
+}
 
 
+}
 
 
 /**COTIZADOR ONLINE***********INDEX***/
@@ -342,7 +367,7 @@ h1{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    translate: -15%;
+    translate: -10%;
 }
 
 .cotizador__text{
@@ -597,6 +622,7 @@ box-shadow: 1px 2px 5px black;
 /**NOVEDADES*************PAGINA PRODUCTOS*****/
 
 .container__novedades{
+    margin-top: 50px;
     text-align: center;
     color: var(--btn-bg-color);
 }
