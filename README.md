@@ -1,7 +1,7 @@
 
 ###  PROYECTO WEB TODOCONECTAR
 
-Todoconectar es un proyecto creado como trabajo practico para el curso de desarrolo web dictado en CoderHouse
+Todoconectar es un proyecto creado como trabajo práctico para el curso de desarrollo web dictado en CoderHouse
 ### Imagen
 
 [![zcasdfsdf.jpg](https://i.postimg.cc/d0wnBXTc/zcasdfsdf.jpg)](https://postimg.cc/mPpQZmwm)
