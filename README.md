@@ -23,8 +23,9 @@ Se realizó la estructura de el sitio web en Html y luego añadimos estilos con 
 * Metodología BEM
 * Box modeling
 * Aplicamos Pseudo clases y pseudo elementos
-3. **Fase 3**
+
+2. **Fase 3**
  Diseño avanzado del sitio web , actualmente nos encontramos en la etapa de optimización del diseño responsive
-| CSS GRID Y SYSTEM BOOTSTRAP | FLEX-BOX | CSS MEDIA QUERY -BREAKPOINTS |
-|:--------------|:-------------:|--------------:|
-| En estructuras padres | Posicionamiento de elementos | 1440px> 720px> 576px> 320p>|
+* CCS Grid y System Bootstrap 
+* Flex-Box
+* CSS Media Query
