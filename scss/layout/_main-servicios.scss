@@ -1,0 +1,77 @@
+
+/**************************PAGINA SERVICIOS*****************************/
+
+
+/***HERO****************** PAGINA SERVICIOS **/
+
+.container__hero{
+    @include props-bg(center, no-repeat, cover);
+    width: 100%;
+    height: 400px;
+    background-color: rgba(100, 100, 100, 0.6);
+    background-blend-mode: soft-light;
+    text-align: center;
+    color: #fff;
+    padding-top: 200px;
+}
+
+.hero__services{ 
+    background-image: url(../assest/img/ServHero.jpg);
+    
+    & h1{
+        color: #fff;
+        text-shadow:1px 1px 5px rgba(0, 0, 0, 0.9);
+        font-size: 45px;
+    }
+}
+
+/***IMAGEN Y TEXTO********** PAGINA SERVICIOS **/
+
+.container__services{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.services__text{
+    max-width: 500px;
+    justify-content: center;
+}
+.services__img1{
+    text-align: center;
+}
+
+
+.services__img img{
+    max-width: 100%;
+}
+
+.container__services h2{
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+
+    .container__services{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .container__services--hogar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container__services--empresa{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+
+    .services__text{
+        text-align: center;
+    }
+}

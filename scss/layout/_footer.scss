@@ -1,0 +1,19 @@
+
+/***PIE DE PAGINA****/
+
+.footer-brand img {
+    width: 300px;
+}
+
+.footer__bg--color{
+    background-color: #444;
+}
+
+.footer__hover:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.footer__copy--bg{
+    background-color: rgba(0, 0, 0, 0.2);
+}

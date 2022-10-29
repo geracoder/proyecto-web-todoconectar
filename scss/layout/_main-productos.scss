@@ -1,0 +1,157 @@
+
+/**************************PAGINA PRODUCTOS*****************************/
+
+/******HERO****************PAGINA PRODUCTOS****/
+
+
+.hero__products{ 
+    background-image: url(../assest/img/serv.jpg);
+    
+    & h1{
+        color: #fff;
+        text-shadow:1px 1px 5px rgba(0, 0, 0, 0.9);
+        font-size: 45px;
+    }
+}
+
+.products__subtitle{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+
+    & h3{
+        font-size: 35px;
+    }
+    
+    & span{
+        color: $btn-bg-color;
+    }
+}
+
+/**IMAGEN Y TEXTO******PAGINA PRODUCTOS***/
+
+.container__products{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.products__text{
+    max-width: 500px;
+    justify-content: center;
+
+}
+.products__img{
+    display: flex;
+    justify-content: center;
+}
+
+.container__services h2{
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+
+    .container__products{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .container__products--3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container__products--4{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .products__text{
+        text-align: center;
+    }
+}
+
+/**NOVEDADES*************PAGINA PRODUCTOS*****/
+
+.container__novedades{
+    margin-top: 50px;
+    text-align: center;
+    color: $btn-bg-color;
+}
+.novedades__h2{
+    font-size: 2.5rem;
+}
+
+/**CARDS*************PAGINA PRODUCTOS*****/
+
+.container__cardspro{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    padding: 40px;
+    }
+
+.cardspro__item{
+    @include props-flex(none, center, center);
+    @include props-bg(center, no-repeat, cover);
+    height: 150px;
+    box-shadow: 1px 2px 5px black;
+    border-radius: 4px;
+
+}
+
+.cardspro__item--text{
+    color: #fff;
+    text-shadow:1px 1px 5px rgba(0, 0, 0, 0.9);
+    font-size: 2em;
+    text-align: center;
+}
+
+.cardspro__item {
+    &:first-child {
+        background-image: url(../assest/img/campo.jpg);
+    }
+
+    &:nth-child(2) {
+        background-image: url(../assest/img/ocultaCAM.jpg);
+    }
+
+    &:nth-child(3) {
+        background-image: url(../assest/img/inteligencia-art.jpg);
+    }
+}
+@media (max-width: 768px) {
+        .container__cardspro{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+    }
+    
+    .cardspro__item:nth-child(3){
+    grid-column: 1 / 3;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+        .container__cardspro{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 1fr 1fr;
+    }
+
+    .cardspro__item:nth-child(3){    
+        grid-column: 1 
+    
+    }
+    
+}

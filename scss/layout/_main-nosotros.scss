@@ -1,0 +1,94 @@
+
+/**************************PAGINA NOSOTROS*****************************/
+
+
+.container__nosotros{
+    background-image: url(../assest/img/nosotros.jpg);
+    @include props-bg(center, no-repeat, cover);
+    background-color: rgba(100, 100, 100, 0.6);
+    background-blend-mode: soft-light;
+    width: 100%;
+    height: auto;
+    
+}
+
+.nosotros__info{
+    text-align: center;
+    padding-top: 200px;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+
+    & h1{
+        color: #fff;
+        text-shadow:1px 1px 5px rgba(0, 0, 0, 0.9);
+        font-size: 45px;
+        margin-bottom: 45px;
+
+    }
+    & p{
+        font-size: 1.5rem;
+        color: #fff;
+        text-shadow: 1px 1px 5px black;
+    }
+}
+
+
+.nosotros__icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.nosotros__icon{
+    @include props-flex(column, center, center);
+    
+    & img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    & p{
+        color:#fff;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+}
+
+.nosotros__btn{
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+
+    & h3{
+        color:#fff;
+        text-shadow: 1px 1px 5px black;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nosotros__icons{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1f;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    .nosotros__icons{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+    }
+    
+    .nosotros__info p{
+        font-size: 1.3rem;
+    }
+
+}

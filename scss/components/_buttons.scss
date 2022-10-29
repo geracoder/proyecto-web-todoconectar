@@ -1,0 +1,19 @@
+.btns__item {
+    text-decoration: none;
+    padding: 8px 25px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+
+    &:hover{
+        background-color: rgba(171, 255, 171, 0.655);
+        color: #fff;
+        }
+}
+
+.btn__item--color{
+    color: $btn_text_color ;
+    background-color: $btn-bg-color;   
+}
+
+

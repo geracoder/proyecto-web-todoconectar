@@ -1,0 +1,301 @@
+
+.container__heroindex{
+    width: 100%;
+    height: auto;
+}
+
+.heroindex{
+    width: 100%;
+    height: 650px;
+    background-image: url(../assest/img/pc.jpg);
+    @include props-bg(right, no-repeat, cover);
+    @include props-flex(column, center, center);
+    align-content: center;
+    gap: 40px;
+    text-align: center;
+    
+    h1{
+        color: #fff;
+        text-shadow:1px 1px 5px rgba(0, 0, 0, 0.9);
+        font-size: 45px;
+    }
+}
+
+
+.container__banner .banner__text h2{
+    color: $btn-bg-color;
+}
+
+.hero__btns a:hover{
+    background-color: $btn_hover_color;
+}
+
+@media (max-width: 576px) {
+    .heroindex{
+        background-image: url(../assest/img/pc2.png);
+        background-position: right;
+    
+        & h1{
+            font-size: 34px;
+        }
+        & a{
+            padding: 8px 15px;
+            font-size: 15px;
+        }
+    }
+
+}
+
+/**SECCION TITULO***************INDEX***/
+
+.container__title{
+    margin: 30px auto 30px auto;
+    align-items: center;
+    text-align: center;
+
+    & h2{
+        color: $btn-bg-color;
+        font-size: 35px;
+    }
+}
+
+
+
+/**CARDS PRIMARIAS*************INDEX***/
+.container__cards {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards__item {
+    @include props-flex(none, center, center);
+    @include props-bg(center, no-repeat, cover);
+    height: 180px;
+    box-shadow: 1px 2px 5px black;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+
+    &:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04);
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.card__link {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.cards__item {
+    &:first-child {
+        background-image: url(../assest/img/imgHogar.png);
+    }
+
+    &:nth-child(2) {
+        background-image: url(../assest/img/imgNegocio.png);
+    }
+
+    &:nth-child(3) {
+        background-image: url(../assest/img/imgEmpresa.png);
+    }
+}
+
+@media (max-width: 768px) {
+    .container__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .cards__item:nth-child(3) {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 576px) {
+    .container__cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .cards__item {
+        &:nth-child(3) {
+            grid-column: 1 / 2;
+        }
+
+        height: 150px;
+    }
+}
+
+/**TEXTO INFO Y BOTON*********INDEX***/
+
+.container__info{
+    width: 70%;
+    margin: 30px auto 30px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+
+    & p{
+        text-align: center;
+    }
+    
+}
+
+.info__btn{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+
+    .container__info{
+        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 100px;
+    }
+}
+
+
+
+/**TEXTO INFO E IMAGEN*********INDEX***/
+.container__banner {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.banner__img {
+    @include props-flex(none, center, none);
+    overflow: hidden;
+    border-radius: 0 25px 0 25px;
+}
+
+.banner__img--size {
+    width: 500px;
+    border-radius: 0 25px 0 25px;
+}
+
+.banner__text {
+    @include props-flex(column, center, none);
+
+
+    h2 {
+        margin-bottom: 20px;
+        color: var(--btn-bg-color);
+    }
+}
+
+@media (max-width: 768px) {
+    .container__banner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+
+    .banner__img--size {
+        width: 400px;
+        border-radius: 0 25px 0 25px;
+    }
+}
+
+/**COTIZADOR ONLINE***********INDEX***/
+
+.container__cotizador {
+    background-image: url(../assest/img/life-insurance.jpg);
+    height: 400px;
+    @include props-bg(center, no-repeat, cover);
+    @include props-flex(column, center, none);
+    background-color: rgba(100, 100, 100, 0.5);
+    color: #fff;
+
+
+}
+
+.cotizador {
+    @include props-flex(column, none, center);
+    gap: 20px;
+    translate: -10%;
+}
+
+.cotizador__text {
+    text-align: center;
+
+    h2 {
+        color: rgba(23, 195, 23, 0.655);
+        font-size: 30px;
+    }
+
+    h3 {
+        color: #fff;
+        font-size: 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    }
+}
+
+
+/**CARDS SECUNDARIAS**********INDEX*****/
+
+.container__cards2 {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-auto-rows: minmax(180px, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card__item2--img {
+    width: 210px;
+    height: 200px;
+}
+
+.cards__item2 {
+    @include props-flex(column, stretch, center);
+    width: 210px;
+    height: 200px;
+    margin: auto;
+    box-shadow: 1px 2px 5px black;
+
+    p {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards__item2:nth-child(3) {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 576px) {
+    .container__cards2 {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+
+    .cards__item2:nth-child(3) {
+        grid-column: 1 / 2;
+    }
+}
