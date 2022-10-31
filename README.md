@@ -22,10 +22,23 @@ Se realizó la estructura de el sitio web en Html y luego añadimos estilos con 
 * Tipografía
 * Metodología BEM
 * Box modeling
-* Aplicamos Pseudo clases y pseudo elementos
+* Aplicamos pseudo clases y pseudo elementos
 
-2. **Fase 3**
- Diseño avanzado del sitio web , actualmente nos encontramos en la etapa de optimización del diseño responsive
+3. **Fase 3**
+ Diseño avanzado del sitio web, optimización del diseño responsive
 * CCS Grid y System Bootstrap 
 * Flex-Box
 * CSS Media Query
+
+4. **Fase 4**
+ En esta etapa implementamos SASS al proyecto
+* _partial | @import
+* $variables
+* @mixins | @include
+* @extend
+
+5. **Fase 5**
+ Optimización SEO
+* Metas
+* Técnicas UI UX
+* Renderización de imagenes
