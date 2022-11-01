@@ -17,7 +17,7 @@
     h1{
         color: #fff;
         text-shadow:1px 1px 5px rgba(0, 0, 0, 0.9);
-        font-size: 45px;
+        font-size: 50px;
     }
 }
 
@@ -35,7 +35,7 @@
         background-position: right;
     
         & h1{
-            font-size: 34px;
+            font-size: 40px;
         }
         & a{
             padding: 8px 15px;
@@ -54,11 +54,21 @@
 
     & h2{
         color: $btn-bg-color;
-        font-size: 35px;
+        text-shadow:1px 1px 1px rgba(0, 0, 0, 0.1);
+        font-size: 38px;
     }
 }
 
+@media (max-width: 576px) {
+    .container__title{
 
+        & h2{
+            font-size: 32px;
+        }
+    }
+    
+
+}
 
 /**CARDS PRIMARIAS*************INDEX***/
 .container__cards {
@@ -85,9 +95,6 @@
         transform: scale(1.04);
     }
 
-    h1 {
-        font-size: 20px;
-    }
 }
 
 .card__link {
@@ -203,6 +210,7 @@
     h2 {
         margin-bottom: 20px;
         color: var(--btn-bg-color);
+        text-shadow:1px 1px 1px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -244,6 +252,7 @@
     h2 {
         color: rgba(23, 195, 23, 0.655);
         font-size: 30px;
+        text-shadow:1px 1px 1px rgba(0, 0, 0, 0.1);
     }
 
     h3 {

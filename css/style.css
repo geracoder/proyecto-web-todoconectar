@@ -41,7 +41,8 @@ h1 {
 
 .btn__item--color {
   color: white;
-  background-color: rgba(23, 195, 23, 0.655); }
+  background-color: rgba(23, 195, 23, 0.655);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
 
 /**BARRA DE NAVEGACION**************GENERAL***************************/
 .navbar {
@@ -93,7 +94,7 @@ h1 {
   .heroindex h1 {
     color: #fff;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
-    font-size: 45px; }
+    font-size: 50px; }
 
 .container__banner .banner__text h2 {
   color: rgba(23, 195, 23, 0.655); }
@@ -106,7 +107,7 @@ h1 {
     background-image: url(../assest/img/pc2.png);
     background-position: right; }
     .heroindex h1 {
-      font-size: 34px; }
+      font-size: 40px; }
     .heroindex a {
       padding: 8px 15px;
       font-size: 15px; } }
@@ -118,7 +119,12 @@ h1 {
   text-align: center; }
   .container__title h2 {
     color: rgba(23, 195, 23, 0.655);
-    font-size: 35px; }
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 38px; }
+
+@media (max-width: 576px) {
+  .container__title h2 {
+    font-size: 32px; } }
 
 /**CARDS PRIMARIAS*************INDEX***/
 .container__cards {
@@ -145,8 +151,6 @@ h1 {
   .cards__item:hover {
     filter: opacity(0.9);
     transform: scale(1.04); }
-  .cards__item h1 {
-    font-size: 20px; }
 
 .card__link {
   text-decoration: none;
@@ -232,7 +236,8 @@ h1 {
   align-items: none; }
   .banner__text h2 {
     margin-bottom: 20px;
-    color: var(--btn-bg-color); }
+    color: var(--btn-bg-color);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
 
 @media (max-width: 768px) {
   .container__banner {
@@ -269,7 +274,8 @@ h1 {
   text-align: center; }
   .cotizador__text h2 {
     color: rgba(23, 195, 23, 0.655);
-    font-size: 30px; }
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
   .cotizador__text h3 {
     color: #fff;
     font-size: 20px;
